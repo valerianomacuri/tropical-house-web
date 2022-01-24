@@ -1,0 +1,9 @@
+.container {
+    background: #090919;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-height: 100vh;
+    padding: 12px;
+    width: 100vw;
+}

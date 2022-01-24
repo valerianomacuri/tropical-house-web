@@ -1,0 +1,34 @@
+.button {
+    display: flex;
+    width: fit-content;
+}
+
+.contained {
+    background: #940CFF;
+    border-radius: 100px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    /* identical to box height */
+    padding: 9px 19px;
+
+    color: #FFFFFF;
+}
+
+.outlined {
+    background: #090919;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-sizing: border-box;
+    border-radius: 100px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    /* identical to box height */
+    padding: 9px 19px;
+
+
+    color: rgba(255, 255, 255, 0.6);
+}

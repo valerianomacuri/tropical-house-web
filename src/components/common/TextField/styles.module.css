@@ -1,0 +1,19 @@
+.textField {
+    background: #191626;
+    border-radius: 10px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    padding: 13px;
+    width: 100%;
+}
+
+.input {
+    background: #191626;
+    width: 100%;
+}
+
+.icon {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 24px;
+}
