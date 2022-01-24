@@ -1,5 +1,3 @@
-import { Button } from 'components/common/Button'
-import { IconButton } from 'components/common/IconButton'
 import { TextField } from 'components/common/TextField'
 import { Typography } from 'components/common/Typography'
 import { PlayerCard } from 'components/PlayerCard'
@@ -25,7 +23,12 @@ export const Home = () => {
       >
         Popular Releases
       </Typography>
-      <SongCard />
+      <div className={ styles.songCardsContainer }>
+        <SongCard />
+        <SongCard />
+        <SongCard />
+        <SongCard />
+      </div>
       <Typography
         variant='subtitle1'
       >
@@ -42,7 +45,6 @@ export const Home = () => {
       <PlayerCard />
       <PlayerCard />
       <PlayerCard />
-      
     </div>
   )
 }
