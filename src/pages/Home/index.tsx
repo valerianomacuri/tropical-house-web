@@ -2,11 +2,13 @@ import { TextField } from 'components/common/TextField'
 import { Typography } from 'components/common/Typography'
 import { PlayerCard } from 'components/PlayerCard'
 import { SongCard } from 'components/SongCard'
+import { Fragment } from 'react'
 import styles from './styles.module.css'
 
 export const Home = () => {
   return (
-    <div className={ styles.container }>
+    <Fragment>
+      <div className={ styles.container }>
       <Typography
         variant='title1'
         component='h2'
@@ -46,5 +48,6 @@ export const Home = () => {
       <PlayerCard />
       <PlayerCard />
     </div>
+    </Fragment>
   )
 }

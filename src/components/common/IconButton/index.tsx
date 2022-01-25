@@ -1,24 +1,29 @@
 import styles from './styles.module.css'
 
 type Props = {
+    buttonProps?: React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>;
+    color?: string;
     iconClassName?: string;
     size?: 'small' | 'medium' | 'large' ;
-    variant?: 'primary' | 'secondary' ;
-    [x: string]: any
+    variant?: 'primary' | 'secondary' | 'ghost';
 }
 
 export const IconButton = ({
+    buttonProps,
+    color,
     iconClassName='bx-play',
     size = 'small',
     variant = 'primary',
-    ...props
 }: Props) => {
   return (
       <button
         className={ [ styles.iconButton ,styles[ size ], styles[ variant] ].join(' ') }
-        { ...props }
+        { ...buttonProps }
       >
-          <i className={ [ 'bx', iconClassName, styles.iconButton, styles[ size ] ].join(' ') }></i>
+          <i 
+            className={ [ 'bx', iconClassName, styles.iconButton, styles[ size ] ].join(' ') }
+            style={{ color, }}
+          ></i>
       </button>
   )
 };

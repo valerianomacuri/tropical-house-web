@@ -9,8 +9,13 @@
 }
 
 .input {
-    background: #191626;
+    background: transparent;
+    color: #fff;
     width: 100%;
+}
+
+.input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .icon {
