@@ -1,34 +1,34 @@
 .button {
-    display: flex;
-    width: fit-content;
+	display: flex;
+	width: fit-content;
+	white-space: nowrap;
 }
 
 .contained {
-    background: #940CFF;
-    border-radius: 100px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    /* identical to box height */
-    padding: 9px 19px;
+	background: #940cff;
+	border-radius: 100px;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	/* identical to box height */
+	padding: 9px 19px;
 
-    color: #FFFFFF;
+	color: #ffffff;
 }
 
 .outlined {
-    background: #090919;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    box-sizing: border-box;
-    border-radius: 100px;
+	background: #090919;
+	border: 1px solid rgba(255, 255, 255, 0.6);
+	box-sizing: border-box;
+	border-radius: 100px;
 
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    /* identical to box height */
-    padding: 9px 19px;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	/* identical to box height */
+	padding: 9px 19px;
 
-
-    color: rgba(255, 255, 255, 0.6);
+	color: rgba(255, 255, 255, 0.6);
 }

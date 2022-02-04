@@ -1,0 +1,14 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.backgroundImage {
+	width: 156px;
+	height: 120px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 14px;
+}

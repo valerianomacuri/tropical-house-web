@@ -1,40 +1,40 @@
 .iconButton {
-    align-items: center;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
 }
 
 .small {
-    width: 40px;
-    height: 40px;
-    font-size: 24px;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
 }
 
 .medium {
-    width: 62px;
-    height: 62px;
-    font-size: 34px;
+  width: 62px;
+  height: 62px;
+  font-size: 34px;
 }
 
 .large {
-    width: 80px;
-    height: 80px;
-    font-size: 34px;
+  width: 80px;
+  height: 80px;
+  font-size: 34px;
 }
 
 .primary {
-    background: #940CFF;
-    box-shadow: 0px 14px 54px rgba(148, 12, 255, 0.2);
-    color: #fff;
+  background: #940cff;
+  box-shadow: 0px 14px 54px rgba(148, 12, 255, 0.2);
+  color: #fff;
 }
 
 .secondary {
-    background: rgba(255, 255, 255, 0.1);
-    color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
 }
 
 .ghost {
-    background: none;
-    color: #fff;
+  background: none;
+  color: #fff;
 }

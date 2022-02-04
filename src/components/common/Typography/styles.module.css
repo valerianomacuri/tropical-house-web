@@ -1,42 +1,48 @@
 .title1 {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    /* identical to box height */
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	/* identical to box height */
 
-    color: #FFFFFF;
+	color: #ffffff;
+}
+
+.title2 {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+
+	color: #ffffff;
 }
 
 .subtitle1 {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    /* identical to box height */
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	/* identical to box height */
 
-
-    color: #FFFFFF;
+	color: #ffffff;
 }
 
 .subtitle2 {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    /* identical to box height */
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	/* identical to box height */
 
-
-    color: #FFFFFF;
+	color: #ffffff;
 }
 
 .body1 {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    /* identical to box height */
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	/* identical to box height */
 
-
-    color: rgba(255, 255, 255, 0.6);
+	color: rgba(255, 255, 255, 0.6);
 }
