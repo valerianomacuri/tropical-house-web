@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.99ae9795.css",
-    "main.js": "/static/js/main.1de4df2e.js",
-    "static/js/787.e95822fa.chunk.js": "/static/js/787.e95822fa.chunk.js",
-    "index.html": "/index.html",
-    "main.99ae9795.css.map": "/static/css/main.99ae9795.css.map",
-    "main.1de4df2e.js.map": "/static/js/main.1de4df2e.js.map",
-    "787.e95822fa.chunk.js.map": "/static/js/787.e95822fa.chunk.js.map"
+    "main.css": "/tropical-house-web/static/css/main.99ae9795.css",
+    "main.js": "/tropical-house-web/static/js/main.298df695.js",
+    "static/js/787.e95822fa.chunk.js": "/tropical-house-web/static/js/787.e95822fa.chunk.js",
+    "index.html": "/tropical-house-web/index.html",
+    "main.99ae9795.css.map": "/tropical-house-web/static/css/main.99ae9795.css.map",
+    "main.298df695.js.map": "/tropical-house-web/static/js/main.298df695.js.map",
+    "787.e95822fa.chunk.js.map": "/tropical-house-web/static/js/787.e95822fa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.99ae9795.css",
-    "static/js/main.1de4df2e.js"
+    "static/js/main.298df695.js"
   ]
 }
