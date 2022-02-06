@@ -48,13 +48,10 @@
 	height: 8px;
 	background: #940cff;
 	border-radius: 4px;
+	box-shadow: 0px 14px 54px rgba(148, 12, 255, 0.2);
 
 	position: absolute;
 	top: -1px;
-}
-
-.progressStatus:hover {
-	box-shadow: 0px 14px 54px rgba(148, 12, 255, 0.2);
 }
 
 .progressBarContainer {
@@ -99,11 +96,8 @@
 	appearance: none;
 	width: 14px;
 	height: 14px;
-	border-radius: 50%;
 	background: #940cff;
-	cursor: pointer;
-}
-
-.progressBar::-webkit-slider-thumb:hover {
+	border-radius: 50%;
 	box-shadow: 0px 14px 54px rgba(148, 12, 255, 0.2);
+	cursor: pointer;
 }
