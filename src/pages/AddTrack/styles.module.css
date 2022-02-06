@@ -8,10 +8,3 @@
 	padding-bottom: 92px;
 	width: 100%;
 }
-
-.songCardsContainer {
-	display: flex;
-	width: 100%;
-	gap: 16px;
-	overflow-x: scroll;
-}

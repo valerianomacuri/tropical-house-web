@@ -3,7 +3,7 @@ const tracks = [
 		name: "You & I",
 		artist: "Timix",
 		cover: "https://images.genius.com/f9ba457a77b1abd71cad5e9da4eeed59.500x500x1.jpg",
-		source: "https://doc-00-bk-docs.googleusercontent.com/docs/securesc/k0b0p3jq7fdt6eg8rjo901pnhi99os6n/1snv7q8de9k7enp28d5lqvrurpqhkvd0/1644162750000/03460181636936317255/03460181636936317255/1KYnkm3TL_suBFqwrlXP2PolL2ZThvClL?e=download&authuser=0",
+		source: "https://doc-00-bk-docs.googleusercontent.com/docs/securesc/k0b0p3jq7fdt6eg8rjo901pnhi99os6n/m720olff3h8lh6gjkjlqqnrqb3lp1o45/1644163350000/03460181636936317255/03460181636936317255/1KYnkm3TL_suBFqwrlXP2PolL2ZThvClL?e=download&authuser=0",
 		url: "",
 		favorite: false,
 	},

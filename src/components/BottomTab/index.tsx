@@ -1,3 +1,4 @@
+import { Button } from "components/common/Button"
 import { IconButton } from "components/common/IconButton"
 import {
 	HashRouter,
@@ -30,7 +31,14 @@ export const BottomTab = () => {
 				color={pathname === "/playlists" ? "#940CFF" : "#fff"}
 			/>
 			<IconButton iconClassName="bx-heart" variant="ghost" disabled />
-			<IconButton iconClassName="bxs-wrench" variant="ghost" disabled />
+			<IconButton
+				iconClassName="bxs-file-plus"
+				variant="ghost"
+				buttonProps={{
+					onClick: () => navigate("/add-track"),
+				}}
+				color={pathname === "/add-track" ? "#940CFF" : "#fff"}
+			/>
 		</div>
 	)
 }

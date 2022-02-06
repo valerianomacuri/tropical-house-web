@@ -1,5 +1,6 @@
 import { BottomTab } from "components/BottomTab"
 import { Modal } from "components/Modal"
+import { AddTrack } from "pages/AddTrack"
 import { Home } from "pages/Home"
 import { Player } from "pages/Player"
 import { Playlists } from "pages/Playlists"
@@ -9,6 +10,7 @@ export const Router = () => {
 	return (
 		<HashRouter>
 			<Routes>
+				<Route path="/add-track" element={<AddTrack />} />
 				<Route path="/playlists" element={<Playlists />} />
 				<Route path="/" element={<Home />}>
 					<Route
