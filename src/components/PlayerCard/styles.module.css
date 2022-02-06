@@ -1,26 +1,26 @@
 .playerCard {
-    align-items: center;
-    background: #191626;
-    border-radius: 14px;
-    display: flex;
-    gap: 16px;
-    width: 100%;
-    height: 80px;
-    padding: 8px;
+	align-items: center;
+	background: #191626;
+	border-radius: 14px;
+	display: flex;
+	gap: 16px;
+	width: 100%;
+	height: 80px;
+	padding: 8px;
 }
 .playerCard > button:last-child {
-    margin-right: 8px;
+	margin-right: 8px;
 }
 
 .cover {
-    border-radius: 14px;
-    width: 64px;
-    height: 64px;
+	border-radius: 14px;
+	width: 64px;
+	height: 64px;
 }
 
 .description {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    gap: 8px;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	gap: 8px;
 }

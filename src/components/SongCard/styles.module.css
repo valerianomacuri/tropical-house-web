@@ -1,24 +1,27 @@
 .card {
-    background: #C4C4C4;
-    border-radius: 18px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 8px;
-    width: 260px;
-    height: 176px;
+	background: #c4c4c4;
+	border-radius: 18px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 8px;
+	width: 260px;
+	height: 176px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .cardInfo {
-    background: rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(20px);
-    /* Note: backdrop-filter has minimal browser support */
-    border-radius: 12px;
-    display: flex; 
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 8px;
-    padding: 16px;
-    width: 244px;
-    height: 82px;
+	background: rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(20px);
+	/* Note: backdrop-filter has minimal browser support */
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	gap: 8px;
+	padding: 16px;
+	width: 244px;
+	height: 82px;
 }

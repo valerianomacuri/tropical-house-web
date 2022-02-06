@@ -1,11 +1,12 @@
-import { Router } from "routes/Router";
-
-
+import { AudioProvider } from "context/AudioProvider"
+import { Router } from "routes/Router"
 
 function App() {
-  return (
-    <Router />
-  );
+	return (
+		<AudioProvider>
+			<Router />
+		</AudioProvider>
+	)
 }
 
-export default App;
+export default App

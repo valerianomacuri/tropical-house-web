@@ -46,3 +46,13 @@
 
 	color: rgba(255, 255, 255, 0.6);
 }
+
+.body2 {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	/* identical to box height */
+
+	color: rgba(255, 255, 255, 0.6);
+}

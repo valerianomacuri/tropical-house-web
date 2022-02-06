@@ -29,15 +29,8 @@ export const BottomTab = () => {
 				}}
 				color={pathname === "/playlists" ? "#940CFF" : "#fff"}
 			/>
-			<IconButton
-				iconClassName="bx-heart"
-				variant="ghost"
-				buttonProps={{
-					onClick: () => navigate("/player"),
-				}}
-				color={pathname === "/player" ? "#940CFF" : "#fff"}
-			/>
-			<IconButton iconClassName="bxs-wrench" variant="ghost" />
+			<IconButton iconClassName="bx-heart" variant="ghost" disabled />
+			<IconButton iconClassName="bxs-wrench" variant="ghost" disabled />
 		</div>
 	)
 }
