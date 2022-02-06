@@ -44,12 +44,27 @@
 	justify-content: center;
 }
 
+.progressStatus {
+	height: 8px;
+	background: #940cff;
+	border-radius: 4px;
+	opacity: 0.7;
+
+	position: absolute;
+	top: -1px;
+}
+
+.progressStatus:hover {
+	opacity: 1;
+}
+
 .progressBarContainer {
 	display: grid;
 	width: 100%;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(2, 1fr);
 	padding-bottom: 20px;
+	position: relative;
 }
 
 .progressBarContainer > span:first-child {

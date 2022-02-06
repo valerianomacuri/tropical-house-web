@@ -3,6 +3,7 @@ import { Typography } from "components/common/Typography"
 import { useAudio } from "context/AudioContext"
 import tracks from "data"
 import { getTrackDataByTrackRoute, setTrackRoute, toMMSS } from "helpers"
+import { useElementSize } from "hooks/useWindowSize"
 import { Track } from "interfaces/track"
 import { useEffect, useLayoutEffect, useRef, useState } from "react"
 import { Navigate, useNavigate, useParams } from "react-router-dom"
@@ -11,7 +12,6 @@ import styles from "./styles.module.css"
 export const Player = () => {
 	const { trackId } = useParams()
 	const navigate = useNavigate()
-	console.log(trackId)
 	const { name, artist } = getTrackDataByTrackRoute(trackId as string)
 	const {
 		audio,
@@ -21,9 +21,13 @@ export const Player = () => {
 		trackLoading,
 		currentTrack,
 		setCurrentTrack,
+		setCurrentTime,
 		setPaused,
 	} = useAudio()
-
+	const [nextTime, setNextTime] = useState<number>()
+	const [showHoverTime, setShowHoverTime] = useState<boolean>(false)
+	const progressBar = useElementSize(document.getElementById("progressBar"))
+	console.log(progressBar)
 	useEffect(() => {
 		document.title = name + " - " + artist
 	}, [trackId])
@@ -33,6 +37,15 @@ export const Player = () => {
 				track => track.artist === artist && track.name === name,
 			) as Track,
 		)
+	}, [trackId])
+
+	useEffect(() => {
+		let listener = () => {
+			goToNextTrack()
+		}
+		audio.addEventListener("ended", listener)
+
+		return () => audio.removeEventListener("ended", listener)
 	}, [trackId])
 
 	const goToNextTrack = () => {
@@ -105,19 +118,43 @@ export const Player = () => {
 			<Typography variant="title2">{currentTrack?.name}</Typography>
 			<Typography>{currentTrack?.artist}</Typography>
 			<div className={styles.progressBarContainer}>
+				<div
+					className={styles.progressStatus}
+					id="progressStatus"
+					style={{
+						width: showHoverTime
+							? nextTime && duration && progressBar.width
+								? (progressBar.width * nextTime) / duration + 2
+								: 0
+							: currentTime && duration && progressBar.width
+							? (progressBar.width * currentTime) / duration + 2
+							: 0,
+					}}
+				/>
 				<input
+					id="progressBar"
 					className={styles.progressBar}
 					type={"range"}
 					min={0}
-					value={currentTime}
+					value={showHoverTime ? nextTime : currentTime}
 					max={duration}
-					onChange={() => {}}
+					onChange={e => {
+						setNextTime(parseInt(e.target.value))
+					}}
+					onMouseDown={() => {
+						setShowHoverTime(true)
+					}}
+					onMouseUp={(e: any) => {
+						setShowHoverTime(false)
+						audio.currentTime = parseInt(e.target.value)
+						setCurrentTime(audio.currentTime)
+					}}
 				/>
 				<Typography variant="body2" component="span">
 					{toMMSS(currentTime)}
 				</Typography>
 				<Typography variant="body2" component="span">
-					{toMMSS(duration)}
+					{toMMSS((duration as number) - (currentTime as number))}
 				</Typography>
 			</div>
 			<div className={styles.playerButtons}>
