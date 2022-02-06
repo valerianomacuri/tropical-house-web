@@ -1,14 +1,14 @@
 * {
-  border: none;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-  list-style: none;
-  margin: 0;
-  outline: none;
-  padding: 0;
-  text-decoration: none;
+	border: none;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	list-style: none;
+	margin: 0;
+	outline: none;
+	padding: 0;
+	text-decoration: none;
 }
 
 html {
-  font-size: 62.5%;
+	font-size: 62.5%;
 }

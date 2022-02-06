@@ -27,7 +27,7 @@
 }
 
 .backgroundImage {
-	width: 327px;
+	width: 296px;
 	height: 220px;
 
 	background-size: cover;
@@ -48,14 +48,13 @@
 	height: 8px;
 	background: #940cff;
 	border-radius: 4px;
-	opacity: 0.7;
 
 	position: absolute;
 	top: -1px;
 }
 
 .progressStatus:hover {
-	opacity: 1;
+	box-shadow: 0px 14px 54px rgba(148, 12, 255, 0.2);
 }
 
 .progressBarContainer {
@@ -103,4 +102,8 @@
 	border-radius: 50%;
 	background: #940cff;
 	cursor: pointer;
+}
+
+.progressBar::-webkit-slider-thumb:hover {
+	box-shadow: 0px 14px 54px rgba(148, 12, 255, 0.2);
 }

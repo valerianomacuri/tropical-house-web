@@ -149,6 +149,14 @@ export const Player = () => {
 						audio.currentTime = parseInt(e.target.value)
 						setCurrentTime(audio.currentTime)
 					}}
+					onTouchStart={() => {
+						setShowHoverTime(true)
+					}}
+					onTouchEnd={(e: any) => {
+						setShowHoverTime(false)
+						audio.currentTime = parseInt(e.target.value)
+						setCurrentTime(audio.currentTime)
+					}}
 				/>
 				<Typography variant="body2" component="span">
 					{toMMSS(currentTime)}
