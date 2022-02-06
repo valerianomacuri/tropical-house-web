@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/valerianomacuri.github.io/tropical-house-web/static/css/main.99ae9795.css",
-    "main.js": "/valerianomacuri.github.io/tropical-house-web/static/js/main.34b3a071.js",
-    "static/js/787.e95822fa.chunk.js": "/valerianomacuri.github.io/tropical-house-web/static/js/787.e95822fa.chunk.js",
-    "index.html": "/valerianomacuri.github.io/tropical-house-web/index.html",
-    "main.99ae9795.css.map": "/valerianomacuri.github.io/tropical-house-web/static/css/main.99ae9795.css.map",
-    "main.34b3a071.js.map": "/valerianomacuri.github.io/tropical-house-web/static/js/main.34b3a071.js.map",
-    "787.e95822fa.chunk.js.map": "/valerianomacuri.github.io/tropical-house-web/static/js/787.e95822fa.chunk.js.map"
+    "main.css": "/static/css/main.99ae9795.css",
+    "main.js": "/static/js/main.1de4df2e.js",
+    "static/js/787.e95822fa.chunk.js": "/static/js/787.e95822fa.chunk.js",
+    "index.html": "/index.html",
+    "main.99ae9795.css.map": "/static/css/main.99ae9795.css.map",
+    "main.1de4df2e.js.map": "/static/js/main.1de4df2e.js.map",
+    "787.e95822fa.chunk.js.map": "/static/js/787.e95822fa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.99ae9795.css",
-    "static/js/main.34b3a071.js"
+    "static/js/main.1de4df2e.js"
   ]
 }
