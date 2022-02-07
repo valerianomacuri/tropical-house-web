@@ -1,8 +1,13 @@
 import { IconButton } from "components/common/IconButton"
 import { Typography } from "components/common/Typography"
 import { useAudio } from "context/AudioContext"
-import tracks from "data"
-import { getTrackDataByTrackRoute, setTrackRoute, toMMSS } from "helpers"
+import { useTrack } from "context/TrackContext"
+import {
+	getRandomInt,
+	getTrackDataByTrackRoute,
+	setTrackRoute,
+	toMMSS,
+} from "helpers"
 import { useElementSize } from "hooks/useWindowSize"
 import { Track } from "interfaces/track"
 import { useEffect, useLayoutEffect, useRef, useState } from "react"
@@ -24,6 +29,8 @@ export const Player = () => {
 		setCurrentTime,
 		setPaused,
 	} = useAudio()
+	const { trackState } = useTrack()
+	const { popularTracks } = trackState
 	const [nextTime, setNextTime] = useState<number>()
 	const [showHoverTime, setShowHoverTime] = useState<boolean>(false)
 	const progressBar = useElementSize(document.getElementById("progressBar"))
@@ -32,11 +39,11 @@ export const Player = () => {
 		document.title = name + " - " + artist
 	}, [trackId])
 	useEffect(() => {
-		setCurrentTrack(
-			tracks.find(
-				track => track.artist === artist && track.name === name,
-			) as Track,
-		)
+		const track = popularTracks.find(
+			track => track.artist === artist && track.name === name,
+		) as Track
+
+		setCurrentTrack(track)
 	}, [trackId])
 
 	useEffect(() => {
@@ -49,10 +56,12 @@ export const Player = () => {
 	}, [trackId])
 
 	const goToNextTrack = () => {
-		const indexTrack = tracks.findIndex(
+		const indexTrack = popularTracks.findIndex(
 			track => track.artist === artist && track.name === name,
 		)
-		const nextTrack = tracks.find((_, index) => index === indexTrack + 1)
+		const nextTrack = popularTracks.find(
+			(_, index) => index === indexTrack + 1,
+		)
 
 		const trackRoute = setTrackRoute(nextTrack?.name, nextTrack?.artist)
 		if (trackRoute) {
@@ -63,10 +72,12 @@ export const Player = () => {
 	}
 
 	const goToPrevTrack = () => {
-		const indexTrack = tracks.findIndex(
+		const indexTrack = popularTracks.findIndex(
 			track => track.artist === artist && track.name === name,
 		)
-		const prevTrack = tracks.find((_, index) => index === indexTrack - 1)
+		const prevTrack = popularTracks.find(
+			(_, index) => index === indexTrack - 1,
+		)
 		const trackRoute = setTrackRoute(prevTrack?.name, prevTrack?.artist)
 
 		if (trackRoute) {

@@ -1,11 +1,14 @@
 import { AudioProvider } from "context/AudioProvider"
+import { TrackProvider } from "context/TrackProvider"
 import { Router } from "routes/Router"
 
 function App() {
 	return (
-		<AudioProvider>
-			<Router />
-		</AudioProvider>
+		<TrackProvider>
+			<AudioProvider>
+				<Router />
+			</AudioProvider>
+		</TrackProvider>
 	)
 }
 

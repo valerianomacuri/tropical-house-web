@@ -1,21 +1,5 @@
 const tracks = [
 	{
-		name: "You & I",
-		artist: "Timix",
-		cover: "https://images.genius.com/f9ba457a77b1abd71cad5e9da4eeed59.500x500x1.jpg",
-		source: "https://doc-00-bk-docs.googleusercontent.com/docs/securesc/k0b0p3jq7fdt6eg8rjo901pnhi99os6n/m720olff3h8lh6gjkjlqqnrqb3lp1o45/1644163350000/03460181636936317255/03460181636936317255/1KYnkm3TL_suBFqwrlXP2PolL2ZThvClL?e=download&authuser=0",
-		url: "",
-		favorite: false,
-	},
-	{
-		name: "Faded",
-		artist: "Tiesto",
-		cover: "https://i.discogs.com/k1eupqtT5mWorejhRsiO1uQbb64yA6cEYFpVHIaoGqg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWltYWdlcy9SLTgw/NDgxODgtMTQ1NDE1/NTAyNy00MjMxLmpw/ZWc.jpeg",
-		source: "https://temporal2022.xyz/fmn/Electronica/Alan%20Walker/Alan%20Walker%20-%20Faded%20(Tiestos%20Deep%20House%20Remix).skm",
-		url: "",
-		favorited: false,
-	},
-	{
 		name: "Mekanın Sahibi",
 		artist: "Norm Ender",
 		cover: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/img/1.jpg",

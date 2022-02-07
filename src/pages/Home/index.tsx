@@ -2,13 +2,18 @@ import { TextField } from "components/common/TextField"
 import { Typography } from "components/common/Typography"
 import { PlayerCard } from "components/PlayerCard"
 import { SongCard } from "components/SongCard"
-import tracks from "data"
-import { Player } from "pages/Player"
-import { Fragment } from "react"
-import { Outlet, Route } from "react-router-dom"
+import { useTrack } from "context/TrackContext"
+import { Fragment, useEffect, useState } from "react"
+import { Outlet } from "react-router-dom"
 import styles from "./styles.module.css"
 
 export const Home = () => {
+	const { getTracks, trackState } = useTrack()
+	const { searchedTracks, popularTracks } = trackState
+	const [textToSearch, setTextToSearch] = useState("")
+	useEffect(() => {
+		getTracks("maluma")
+	}, [])
 	return (
 		<Fragment>
 			<div className={styles.container}>
@@ -16,10 +21,19 @@ export const Home = () => {
 					Discover
 				</Typography>
 				<Typography>What do you want to hear?</Typography>
-				<TextField />
+				<form
+					onSubmit={e => {
+						e.preventDefault()
+						getTracks(textToSearch)
+					}}
+				>
+					<TextField
+						onChange={e => setTextToSearch(e.target.value)}
+					/>
+				</form>
 				<Typography variant="subtitle1">Popular Releases</Typography>
 				<div className={styles.songCardsContainer}>
-					{tracks.map(track => (
+					{popularTracks.map(track => (
 						<SongCard
 							key={track.source}
 							name={track.name}
@@ -29,7 +43,14 @@ export const Home = () => {
 					))}
 				</div>
 				<Typography variant="subtitle1">Recently playlist</Typography>
-				<PlayerCard />
+				{searchedTracks?.map(track => (
+					<PlayerCard
+						key={track.source}
+						name={track.name}
+						artist={track.artist}
+						cover={track.cover}
+					/>
+				))}
 				<PlayerCard />
 				<PlayerCard />
 				<PlayerCard />

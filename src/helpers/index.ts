@@ -30,3 +30,7 @@ export const setTrackRoute = (name?: string, artist?: string) => {
 	if (!name || !artist) return undefined
 	return name.split(" ").join("+") + "_" + artist.split(" ").join("+")
 }
+
+export const getRandomInt = (min: number, max: number) => {
+	return Math.floor(Math.random() * (max - min)) + min
+}

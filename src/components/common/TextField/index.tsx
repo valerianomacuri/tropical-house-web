@@ -1,16 +1,19 @@
 import styles from "./styles.module.css"
 
-type Props = {
+interface TextFieldProps
+	extends React.DetailedHTMLProps<
+		React.InputHTMLAttributes<HTMLInputElement>,
+		HTMLInputElement
+	> {
 	placeholder?: string
 	startIconClassName?: string
-	[x: string]: any
 }
 
 export const TextField = ({
 	placeholder = "Search music",
 	startIconClassName = "bx-search",
 	...props
-}: Props) => {
+}: TextFieldProps) => {
 	return (
 		<div className={styles.textField}>
 			<i
